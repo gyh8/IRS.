@@ -1,3 +1,4 @@
+# [Paper](https://ieeexplore.ieee.org/document/10838572)
 # Implicit Residual Solver (IRS)
 ![image](IRS.JPG)
 Implicit Residual Solver for Total Variation Models
