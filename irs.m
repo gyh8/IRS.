@@ -1,5 +1,5 @@
 function result = irs(input, lambda, iteration)
-%solve 1/2||U-f||_2^2 + lambda/2*||grad U||_1 
+%solve 1/2||U-input||_2^2 + lambda/2*||grad U||_1 
 %implicit residual solver, implemented by Yuanhao Gong
 %please cite the following work if you use this code
 %{ 
