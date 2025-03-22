@@ -1,7 +1,7 @@
 # [Paper](https://ieeexplore.ieee.org/document/10838572),  $~~~~$ [Code](irs.m)
 ## Implicit Residual Solver (IRS) for Total Variation Models
 ![image](IRS.JPG)
-IRS only update one variable during the iteration loop. Thus, it is memory efficient and computational fast.
+IRS only update one variable during the iteration loop. Thus, it is memory efficient and computationally fast.
 ## IRSnet: the unfolding neural network from IRS
 ![image](alls.png)
 Unfolding the Implicit Residual Solver as Neural Network with only 0.003M Parameters for Total Variation Models
