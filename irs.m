@@ -28,11 +28,11 @@ end
 residual=[diff(bx,1,2), -bx(:,end)]+[diff(by,1,1); -by(end,:)];%div
 result = im + theta*residual;
 
-%% gradient of divergence of (gx, gy)
-function [tx,ty]=myGradDiv(gx,gy,theta)
+%% gradient of divergence of (bx, by)
+function [tx,ty]=myGradDiv(bx,by,theta)
 kx=[1,-2,1]*theta+[0,1,0];
 kxy=[0,1,-1;0,-1,1;0,0,0;]*theta; 
-tx = conv2(gx,kx,'same')+conv2(gy,kxy,'same');
-ty = conv2(gx,kxy','same')+conv2(gy,kx','same');
-tx(:,1)=gx(:,1);%boundary condition
-ty(1,:)=gy(1,:);
+tx = conv2(bx,kx,'same')+conv2(by,kxy,'same');
+ty = conv2(bx,kxy','same')+conv2(by,kx','same');
+tx(:,1)=bx(:,1);%boundary condition
+ty(1,:)=by(1,:);
